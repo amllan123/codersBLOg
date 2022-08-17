@@ -8,7 +8,7 @@ import { fetchCategories,fetcArticles } from "../http";
 import ArticleList from '../../components/ArticleList';
 import Pagination from '../../components/Pagination';
 import  qs from 'qs';
-import {useRouter} from 'next/router';
+import { useRouter } from 'next/router';
 import { debounce } from '../../utils/index'
 interface IPropType{
   categories:{
@@ -23,7 +23,7 @@ interface IPropType{
 
 function category ({categories,articles}:IPropType) {
   const {page,pageCount}=articles.pagination
-  const router=useRouter();
+  const router=useRouter()
   const {category:categoryslug}=router.query
 
   const handlesearch=(query:string)=>{
