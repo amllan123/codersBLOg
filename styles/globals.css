@@ -1,26 +1,23 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@layer components{
+    .disabled{
+        @apply opacity-50 cursor-not-allowed
+    
+    }
 
-* {
-  box-sizing: border-box;
-}
+    .single-article pre {
+        @apply text-green-600  bg-gray-100 m-4 p-1 border-l-4 border-primary
+    }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+    .single-article p {
+        @apply font-semibold text-gray-700 m-2 bg-gray-100
+    }
+
+    .single-article a {
+        @apply text-orange-300 m-2 
+    }
 }
