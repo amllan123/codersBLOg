@@ -12,6 +12,7 @@ import Link from 'next/link';
 
 function Footer() {
   
+  const newLocal = "https://www.instagram.com/amllan/";
   return (<>
   <footer className=' container  bottom-0  mb-0 '>
  <div className='container mx-auto flex items-center   justify-between  flex-col sm:flex-row py-8  '>
@@ -28,7 +29,7 @@ function Footer() {
   <div >
     
     
-    <Link href="https://www.instagram.com/amllan/" className='mr-3 ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></Link>
+    <Link href={newLocal} className=' mr-3  ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></Link>
     <Link href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></Link>
     <Link href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></Link>
 

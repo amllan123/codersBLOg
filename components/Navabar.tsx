@@ -30,7 +30,7 @@ function Navabar() {
 
 
        <ul className=' flex items-center   text-grey-600 flex-col sm:flex-row '>
-      <li className='mr-6'>  <a href="#" className='hover:text-gray-400 transition-all' >
+      <li className='mr-6'>  <a href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='hover:text-gray-400 transition-all' >
             Log In
         </a></li>
         <li className=''>  <a href="#" className='bg-primary  py-1 px-2 rounded-sm text-white hover:bg-primary-dark transition-all'>
