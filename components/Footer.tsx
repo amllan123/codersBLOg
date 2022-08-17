@@ -6,6 +6,7 @@ import { config } from "@fortawesome/fontawesome-svg-core";
 config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faInstagram,faTwitter,faLinkedinIn,} from '@fortawesome/free-brands-svg-icons'
+import Link from 'next/link';
 
 
 
@@ -18,7 +19,7 @@ function Footer() {
   
    <Image src="/cod.png" height={30} width={30}/>
    <span className=' font-normal ml-4 text-primary'>
-    Coder's Blog
+    Coders Blog
      </span>
      <div className='text-gray-600 m-2'><span className=' text-sm  font-normal text-gray-600'>| © 2022 @CodeAmllan</span> </div>
   </a>
@@ -26,9 +27,10 @@ function Footer() {
   
   <div >
     
-    <a href="https://www.instagram.com/amllan/" className='mr-3 ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></a>
-    <a href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></a>
-    <a href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></a>
+    
+    <Link href="https://www.instagram.com/amllan/" className='mr-3 ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></Link>
+    <Link href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></Link>
+    <Link href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></Link>
 
   </div>
   

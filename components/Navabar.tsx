@@ -10,7 +10,7 @@ function Navabar() {
            <div className='flex items-center cursor-pointer sm:py-2'>
              <Image src="/cod.png" height={40} width={40}/>
              <span className='font-bold ml-4 text-primary'>
-                Coder's Blog
+                Coders Blog
              </span>
            </div>
       </Link>
