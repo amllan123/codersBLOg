@@ -26,12 +26,16 @@ function Footer() {
   </a>
 
   
-  <div >
+  <div> 
+    <ul className='flex'>
+   <li><a href={newLocal} className=' mr-3  ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></a></li>
+   <li> <a href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></a></li>
     
+   <li><a href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></a></li>
+
+    </ul>
     
-    <Link href={newLocal} className=' mr-3  ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></Link>
-    <Link href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></Link>
-    <Link href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></Link>
+   
 
   </div>
   
