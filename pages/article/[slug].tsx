@@ -2,7 +2,7 @@ import React from 'react'
 import { GetServerSideProps } from 'next'
 import { AxiosResponse } from 'axios'
 import { ICollectionResponse, IArticles } from '../../types'
-import { fetchArticle } from '../http'
+import { fetchArticle } from '../../http'
 import Head from 'next/head'
 import qs from 'qs'
 import Image from 'next/image';

@@ -1,7 +1,7 @@
 import { Axios, AxiosResponse } from 'axios'
 import type { GetServerSideProps, NextPage } from 'next'
 import Head from 'next/head'
-import { fetcArticles, fetchCategories } from './http'
+import { fetcArticles, fetchCategories } from '../http'
 import { ICollectionResponse, IPagination } from '../types'
 import { ICategory } from '../types'
 import { IArticles ,IQueryOption } from '../types'

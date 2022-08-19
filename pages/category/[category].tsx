@@ -4,7 +4,7 @@ import Tab from '../../components/Tab';
 import { GetServerSideProps } from 'next';
 import {AxiosResponse} from 'axios'
 import {ICollectionResponse,ICategory,IArticles,IQueryOption, IPagination} from '../../types/index'
-import { fetchCategories,fetcArticles } from "../http";
+import { fetchCategories,fetcArticles } from "../../http";
 import ArticleList from '../../components/ArticleList';
 import Pagination from '../../components/Pagination';
 import  qs from 'qs';

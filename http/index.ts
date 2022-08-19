@@ -1,5 +1,4 @@
 import axios from 'axios';
-import QueryString from 'qs';
 
 const api=axios.create({
 baseURL:'http://localhost:1337',
