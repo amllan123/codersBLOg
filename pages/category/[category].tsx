@@ -22,8 +22,8 @@ interface IPropType{
 }
 
 
-function category ({categories,articles}:IPropType) {
-   const router = useRouter();
+function category ({categories,articles}:IPropType) {const router = useRouter();
+
   const {page,pageCount}=articles.pagination
  
   const {category:categoryslug}=router.query
