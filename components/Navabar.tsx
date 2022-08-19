@@ -6,7 +6,7 @@ function Navabar() {
   return (
     <>
      <nav className="flex item-center justify-between py-6 sm:py-8  ">
-      <Link href='/'>
+      <Link href="/">
            <div className='flex items-center cursor-pointer sm:py-2'>
              <Image src="/cod.png" height={40} width={40}/>
              <span className='font-bold ml-4 text-primary'>
@@ -30,7 +30,7 @@ function Navabar() {
 
 
        <ul className=' flex items-center   text-grey-600 flex-col sm:flex-row '>
-      <li className='mr-6'>  <a href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='hover:text-gray-400 transition-all' >
+      <li className='mr-6'>  <a href="#" className='hover:text-gray-400 transition-all' >
             Log In
         </a></li>
         <li className=''>  <a href="#" className='bg-primary  py-1 px-2 rounded-sm text-white hover:bg-primary-dark transition-all'>

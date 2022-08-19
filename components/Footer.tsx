@@ -12,26 +12,27 @@ import Link from 'next/link';
 
 function Footer() {
   
-  const newLocal = "https://www.instagram.com/amllan/";
+  
   return (<>
   <footer className=' container  bottom-0  mb-0 '>
  <div className='container mx-auto flex items-center   justify-between  flex-col sm:flex-row py-8  '>
-  <Link href="/" className='flex items-center justify-center md:justify-start text-gray-900'>
+  <Link href="/" className='flex items-center justify-center md:justify-start text-gray-900'><a>
   
    <Image src="/cod.png" height={30} width={30}/>
    <span className=' font-normal ml-4 text-primary'>
     Coders Blog
      </span>
      <div className='text-gray-600 m-2'><span className=' text-sm  font-normal text-gray-600'>| © 2022 @CodeAmllan</span> </div>
-  </Link>
+
+  </a></Link>
 
   
-  <div className=' m-2'>
+  <div className=' flex'>
     
     
-    <Link href={newLocal} className=' mr-3  ml-2'><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></Link>
-    <Link href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></Link>
-    <Link href="https://www.linkedin.com/in/amllan-bhukta-88611220b/" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></Link>
+    <a href="#" className=' mr-3  ml-2 '><FontAwesomeIcon icon={faInstagram }   style={{ fontSize: 20, color: "gray" }}/></a>
+    <a href="#" className='mr-3 '><FontAwesomeIcon  icon={faTwitter}  style={{ fontSize: 20, color: "gray",  }} /></a>
+    <a href="#" className='mr-3'><FontAwesomeIcon icon={faLinkedinIn}  style={{ fontSize: 20, color: "gray" }}/></a>
 
   </div>
   
