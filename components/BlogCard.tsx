@@ -9,7 +9,9 @@ interface IPropType{
 }
 
 const BlogCard = ({items}:IPropType) => {
+  const url=process.env.API_URL;
   return (
+    
     <div>
     <Link href={`/article/${items.attributes.Slug}`}>
             <h1 className=' text-lg text-gray-600 font-bold hover:decoration-2 hover:underline hover:cursor-pointer hover:decoration-primary'>{items.attributes.Title}</h1>
@@ -17,7 +19,7 @@ const BlogCard = ({items}:IPropType) => {
     </Link>
     <div className='flex items-center my-4'>
         <div className=' rounded-lg overflow-hidden flex items-center justify-center mr-2'>
-            <Image src={`http://localhost:1337${items.attributes.author.data.attributes.avtar.data.attributes.formats.thumbnail.url}`}
+            <Image src={`${url}${items.attributes.author.data.attributes.avtar.data.attributes.formats.thumbnail.url}`}
             height={40}
             width={40}
             />
