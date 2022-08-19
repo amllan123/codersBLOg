@@ -22,7 +22,8 @@ interface IPropType{
 }
 
 
-function category ({categories,articles}:IPropType) {const router = useRouter();
+function Category ({categories,articles}:IPropType) {
+  const router = useRouter();
 
   const {page,pageCount}=articles.pagination
  
@@ -108,4 +109,4 @@ props:{
 }
 
 
-export default category;
+export default Category;

@@ -57,7 +57,7 @@ function Tab({categories, handleOnsearch}:IPropType) {
      
      }`}>
 
-<Link href={`/category/${category.attributes.Slug}`}>{category.attributes.Title}</Link> 
+<Link href={`/Category/${category.attributes.Slug}`}>{category.attributes.Title}</Link> 
        </li>)
 
     })
