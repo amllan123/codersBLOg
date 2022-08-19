@@ -49,7 +49,7 @@ const Home: NextPage<IPropType> = ({categories,articles}) => {
           {/* cztegory fetching
            */}
 
-      <Tab categories={categories.items}  handleOnsearch={debounce(handleserach,500)}/>
+      <Tab categories={categories.items}  handleOnsearch={handleserach}/>
 
       {/* Article fetching */}
 

@@ -40,7 +40,7 @@ function Category ({categories,articles}:IPropType) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
     
-    <Tab categories={categories.items} handleOnsearch={debounce(handlesearch,500)}/>
+    <Tab categories={categories.items} handleOnsearch={handlesearch}/>
     <ArticleList articles={articles.items} />
     <Pagination page={page} pageCount={pageCount} reDirectUrl={`/category/${categoryslug}`}/ >
   
