@@ -46,7 +46,7 @@ const slug = ({item, notFound=false}:IProptype) => {
 
    <div className='text-lg text-gray-600 leading-8'>
       <img className='w-full max-h-80 my-12 mb-6'
-       src={`http://localhost:1337${item.attributes.Image.data.attributes.url}`}
+       src={`${url}${item.attributes.Image.data.attributes.url}`}
 
       
       alt={`${item.attributes.Title}`} />
