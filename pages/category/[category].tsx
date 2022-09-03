@@ -30,7 +30,7 @@ function Category ({categories,articles}:IPropType) {
   const {category:categoryslug}=router.query
 
   const handlesearch=(query:string)=>{
-    router.push(`/category/${categoryslug}/?search=${query}`)
+    router.push(`/Category/${categoryslug}/?search=${query}`)
   }
   return (
     <>
@@ -42,7 +42,7 @@ function Category ({categories,articles}:IPropType) {
     
     <Tab categories={categories.items} handleOnsearch={handlesearch}/>
     <ArticleList articles={articles.items} />
-    <Pagination page={page} pageCount={pageCount} reDirectUrl={`/category/${categoryslug}`}/ >
+    <Pagination page={page} pageCount={pageCount} reDirectUrl={`/Category/${categoryslug}`}/ >
   
     </>
  )
